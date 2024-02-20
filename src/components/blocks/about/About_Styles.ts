@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import aboutImage from "/src/assets/images/about.svg";
+import aboutImage from "../../../assets/images/about.svg";
 
 export const StyledAbout = styled.section`
   position: relative;
-  min-height: 550px;
   padding-top: 183px;
   padding-bottom: 145px;
   padding-right: 553px;
   background-color: ${(props) => props.theme.backgroundColorBlue};
-  align-items: center;
   z-index: 1;
-  flex-direction: column;
 
   &::after {
     position: absolute;
@@ -26,7 +23,6 @@ export const StyledAbout = styled.section`
 `;
 
 export const Text = styled.p`
-  box-sizing: border-box;
   max-width: 650px;
   margin-top: 24px;
   padding-right: 116px;
