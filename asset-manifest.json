@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/FarmProducts/static/css/main.e6c13ad2.css",
-    "main.js": "/FarmProducts/static/js/main.c8add6f6.js",
+    "main.js": "/FarmProducts/static/js/main.a9dbeda4.js",
     "static/js/592.cc4872a6.chunk.js": "/FarmProducts/static/js/592.cc4872a6.chunk.js",
+    "static/media/about.svg": "/FarmProducts/static/media/about.c93e138e7a75bb0a404881b25070fc9f.svg",
     "static/media/logo.svg": "/FarmProducts/static/media/logo.0db3cdd76b1e818c74fe3d16876515b2.svg",
     "index.html": "/FarmProducts/index.html",
     "main.e6c13ad2.css.map": "/FarmProducts/static/css/main.e6c13ad2.css.map",
-    "main.c8add6f6.js.map": "/FarmProducts/static/js/main.c8add6f6.js.map",
+    "main.a9dbeda4.js.map": "/FarmProducts/static/js/main.a9dbeda4.js.map",
     "592.cc4872a6.chunk.js.map": "/FarmProducts/static/js/592.cc4872a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c8add6f6.js"
+    "static/js/main.a9dbeda4.js"
   ]
 }
