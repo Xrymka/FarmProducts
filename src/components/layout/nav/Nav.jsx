@@ -1,4 +1,4 @@
-import { Button } from '../../ui/button/Button';
+import { Button } from "../../ui/button/Button.styled";
 
 export function Nav() {
   return (

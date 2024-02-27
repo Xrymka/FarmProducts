@@ -13,5 +13,6 @@ export const defaultTheme = {
   lineHeightDefault: 1.5,
   pageWidth: "1280px",
   headerHeight: "80px",
-  footerHeight: "80px"
+  footerHeight: "80px",
+  indent: "20px"
 };

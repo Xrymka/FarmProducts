@@ -1,7 +1,17 @@
 import styled from "styled-components";
-import type { ButtonProps } from "./Button";
 
-export const StyledButton: ButtonProps = styled.a`
+export type ButtonProps = {
+  link?: string,
+  $maxWidth?: boolean,
+  className?: string,
+  fontSize?: string,
+  fontFamily?: string,
+  color?: string,
+  buttonColor?: string,
+  buttonColorHoverActive?: string
+};
+
+export const Button = styled.a<ButtonProps>`
   display: block;
   min-height: 60px;
   padding: 0 24px;
@@ -19,7 +29,6 @@ export const StyledButton: ButtonProps = styled.a`
   box-shadow: none;
   cursor: pointer;
   transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
-  box-sizing: border-box;
   font-family: ${(props) => props.theme.fontFamily};
 
   &:hover,

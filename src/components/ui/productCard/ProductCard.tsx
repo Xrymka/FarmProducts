@@ -1,10 +1,11 @@
-import { ProductLabel } from "../productLabel/ProductLabel";
-import { Title } from "../title/Title";
+import { Title } from "../title/Title.styled";
+import { S } from "./ProductCard_Styles";
 
-type AdvantagePropsType = {
+export type AdvantagePropsType = {
   advantage: {
     id: number
     title: string
+    owner: string
     isNegative: boolean
     image: string
     about: string
@@ -13,17 +14,20 @@ type AdvantagePropsType = {
 
 export function ProductCard (props: AdvantagePropsType) {
   return (
-    <article className={`product-card ${props.advantage.isNegative ? "product-card--negative" : ""}`}>
-      <img
-          className="product-card__img"
+    <S.ProductCard isNegative={props.advantage.isNegative}>
+      <S.Header>
+        <S.Image
           width={56}
           height={56}
           src={props.advantage.image}
           alt={props.advantage.title}
-      />
-      <ProductLabel isNegative={props.advantage.isNegative}/>
-      <Title level={1} text={props.advantage.title}/>
-      <p className="product-card__text">{props.advantage.about}</p>
-    </article>
+        />
+        <div>
+          <S.Owner isNegative={props.advantage.isNegative}>{props.advantage.owner}</S.Owner>
+          <Title as={"h3"} titleSize="extraSmall">{props.advantage.title}</Title>
+        </div>
+      </S.Header>
+      <S.Text>{props.advantage.about}</S.Text>
+    </S.ProductCard>
   )
 }

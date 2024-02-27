@@ -1,10 +1,17 @@
+import { Container } from "../../Container";
+import { FlexWrapper } from "../../FlexWrapper";
 import { Logo } from "../../ui/logo/Logo";
+import { S } from "./Footer_Styles";
 
 export function Footer () {
   return (
-    <footer className="footer">
-      <Logo />
-      <p className="footer__text">Создано 2021</p>
-    </footer>
+    <S.Footer className="footer">
+      <Container>
+        <FlexWrapper direction="row" justify="space-between" align="center">
+          <Logo />
+          <S.Copyright>Создано 2021</S.Copyright>
+        </FlexWrapper>
+      </Container>
+    </S.Footer>
   )
 }
